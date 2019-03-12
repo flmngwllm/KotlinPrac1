@@ -18,10 +18,14 @@
     <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" app:srcCompat="@drawable/Eevee"
-            android:id="@+id/imageView" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:id="@+id/pokemon"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"/>
     <RadioGroup
             android:layout_width="wrap_content"
@@ -33,15 +37,18 @@
         <RadioButton
                 android:text="Eevee"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/radioButton" android:layout_weight="1"/>
+                android:layout_height="wrap_content" android:id="@+id/rb_eevee" android:layout_weight="1"
+                android:onClick="radioButtonClick"/>
         <RadioButton
                 android:text="Pikachu"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/radioButton2" android:layout_weight="1"/>
+                android:layout_height="wrap_content" android:id="@+id/rb_pikachu" android:layout_weight="1"
+                android:onClick="radioButtonClick"/>
         <RadioButton
                 android:text="Rockruff"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/radioButton3" android:layout_weight="1"/>
+                android:layout_height="wrap_content" android:id="@+id/rb_rockruff" android:layout_weight="1"
+                android:onClick="radioButtonClick"/>
     </RadioGroup>
 
 </android.support.constraint.ConstraintLayout>
