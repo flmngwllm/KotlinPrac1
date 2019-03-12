@@ -15,16 +15,15 @@ class MainActivity : AppCompatActivity() {
     fun radioButtonClick(view: View){
         if(view == rb_eevee){
             //telling to use image view to use the image
-        pokemon.setImageResource(R.drawable.Eevee)
-        }
+        pokemon.setImageResource(R.drawable.eevee)
 
-        if(view == rb_pikachu){
+        } else if (view == rb_pikachu){
             //telling to use image view to use the image
-            pokemon.setImageResource(R.drawable.Pikachu)
-        }
-        if(view == rb_rockruff){
+            pokemon.setImageResource(R.drawable.pikachu)
+
+        } else if(view == rb_rockruff){
             //telling to use image view to use the image
-            pokemon.setImageResource(R.drawable.Rockruff)
+            pokemon.setImageResource(R.drawable.rockruff)
         }
     }
 }
